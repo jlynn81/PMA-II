@@ -1,49 +1,40 @@
 
 /* Social Networking background gradient */
-#gradient {
-	z-index: -999;
-	min-height: 100%;
-  	min-width: 59.375%;
-  	width: 100%;
-  	height: 100%;
-  	position: fixed;
-  	top: 0;
-  	left: 0;
-}
+
 body {
 line-height: 2em;
-color:#000;
 font: 1.5em;
+text-align: center;
 }
 
 /* Header element of the content page */
 #logo {
-margin: 2em;
-float: left;
+	margin-top: 25px;
 }
 
 /* Navigation Beginning */
 nav  {
 	display: block;
 	width: 100%;
+	margin-left: 175px;
 	overflow: hidden;
-	float: right;
+	text-align: center;
+	
 }
 
 nav ul {
-	margin: 3em;
-	margin-top: 1%;
-	padding: .4em;
-	float: left;
-	list-style: none;
 	background: #422b00;
-	background: rgba(0,0,0,.2);
+	background: none repeat scroll 0 0 rgba(0,0,0,.2);
+	border-radius: .5em;
+	box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 2px 1px rgba(0,0,0,.8) inset;
+	float: left; 
+	list-style: none outside none;
+	padding: .4em;
 	-moz-border-radius: .5em;
-	-webkit-border-radius: .5em;
-	border-radius: .5em;    
+	-webkit-border-radius: .5em;    
 	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 2px 1px rgba(0,0,0,.8) inset;
 	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 2px 1px rgba(0,0,0,.8) inset;
-	box-shadow: 0 1px 0 rgba(255,255,255,.2), 0 2px 1px rgba(0,0,0,.8) inset; 
+	
 }
 
 nav li {
@@ -52,24 +43,23 @@ nav li {
 }
 
 nav a {
+	background: linear-gradient(#F5F5F5, #C1C1C1) repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border-color: #fff #ccc #999 #eee;
+	border-style: solid;
+	border-width: 1px;
+	color: #007F3B;
 	float:left;
-	padding: 1em 3.2em;
-	text-decoration: none;
-	color: #71a856;
-	text-shadow: 0 1px 0 rgba(255,255,255,.5);
 	font: bold 1em 'Libre Baskerville', serif;
 	letter-spacing: 1px;
-	text-transform: uppercase;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #fff #ccc #999 #eee;
-	background: #c1c1c1;
+	padding: 1em 2.5em;
+	text-decoration: none;
+	text-shadow: 0 1px 0 rgba(255,255,255,.5);
 	background: -moz-linear-gradient(#f5f5f5, #c1c1c1);
 	background: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#c1c1c1));
 	background: -webkit-linear-gradient(#f5f5f5, #c1c1c1);
 	background: -o-linear-gradient(#f5f5f5, #c1c1c1);
 	background: -ms-linear-gradient(#f5f5f5, #c1c1c1);
-	background: linear-gradient(#f5f5f5, #c1c1c1);            
+	            
  }
  
 nav a:hover, nav a:focus {
@@ -85,40 +75,39 @@ nav a:hover, nav a:focus {
 	background: linear-gradient(#fac754, #235707);
 }
 
-nav a:active {
-	-moz-box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
-	-webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
-	box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
-}
- 
-nav li:first-child a {
-	border-left: 0;
-	-moz-border-radius: 4px 0 0 4px;
-	-webkit-border-radius: 4px 0 0 4px;
-	border-radius: 4px 0 0 4px;            
-}
+
 /* Navigation Ending */
-/* End of the Header of the page */  
+/* End of the Header of the page */ 
+
+#welcome {
+	background: none repeat scroll 0 0 #60A1FF;
+	float: left;
+	font-family: 'Libre Baskerville', serif;
+	margin: 20px 20px 20px 175px;
+	 
+	height: 300px;
+	width: 400px;
+	
+} 
 
 <!-- Code for Image slide show -->
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('http://html5css3demos.bplaced.net/css3-slider-v3/websymbols-regular-webfont.eot');
+    src: url('http://html5css3demos.bplaced.net/css3-slider-v3/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'), url('http://html5css3demos.bplaced.net/css3-slider-v3/websymbols-regular-webfont.woff') format('woff'), url('http://html5css3demos.bplaced.net/css3-slider-v3/websymbols-regular-webfont.ttf') format('truetype'), url('http://html5css3demos.bplaced.net/css3-slider-v3/websymbols-regular-webfont#WebSymbolsRegular') format('svg');
+}
 
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
 
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-image: url(http://subtlepatterns.com/patterns/dark_wall.png);
-    background-repeat: repeat;
-    height: 500px;
-    padding: 1px;
-}
+} 
 
 h1 { color: white }
 
 #slideshow-wrap {
+	border-top-width: 12px;
     display: block;
     height: 320px;
     min-width: 260px;
@@ -130,6 +119,7 @@ h1 { color: white }
     box-shadow: 0px 0px 5px rgba(0,0,0,.8);
     margin-top: 20px;
     position: relative;
+    float: right;
 }
 
 #slideshow-inner {
@@ -227,7 +217,7 @@ h1 { color: white }
 label.arrows {
     font-family: 'WebSymbolsRegular';
     font-size: 25px;
-    color: rgb(255,255,240);
+    color: rgb(68,178,48);
     position: absolute;
     top: 50%;
     margin-top: -25px;
@@ -268,12 +258,63 @@ input[type=radio]#button-3:checked~.arrows#arrow-2 { left: -37px }
 
 input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
 
-.image {
-	margin-left: 36px;
-	max-width: 100%;
-	padding: 1em;
-	float: left;
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 260px;
+    font-family: 'Yanone Kaffeesatz';
+    z-index: 1000;
 }
+
+.description input { visibility: hidden }
+
+.description label {
+    font-family: 'WebSymbolsRegular';
+    background-color: rgba(255,255,240,1);
+    position: relative;
+    left: -17px;
+    top: 00px;
+    width: 40px;
+    height: 27px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 7px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+    z-index: 5;
+    color: rgb(20,20,20);
+}
+
+#slideshow-inner>ul>li:hover .description label { opacity: 1 }
+
+.description input[type=checkbox]:checked~label { opacity: 1 }
+
+.description .description-text {
+    background-color: rgba(255,255,230,.5);
+    padding-left: 45px;
+    padding-top: 25px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    top: -35px;
+    z-index: 4;
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    -moz-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+    color: rgb(20,20,20);
+}
+
+.description input[type=checkbox]:checked~.description-text { opacity: 1 }
+
+<!-- END OF SLIDESHOW -->
 
 .links {
 text-decoration: none;
@@ -283,14 +324,7 @@ margin-bottom: 2em;
 float: none;
 }
 
-#welcome {
-	font-family: 'Libre Baskerville', serif;
-	margin: 28px 28px 1420px 50px;
-	padding: 1em;
-	border: 1em #422b00; 
-	background: #8f6f27;
-	clear: both;
-}
+
 
 select {
 font-family: 'Libre Baskerville', serif;
@@ -306,10 +340,6 @@ float: left;
 strong {
 font-weight: bold;
 text-shadow: 2px 2px 2px #ebe2d1;
-}
-
-legend {
-font-size: 18pt;
 }
 
 /* Table Date */
@@ -329,21 +359,10 @@ float: left;
 
 /* End of Table Data */
 
-fieldset {
-border: solid 0.09em #71a856;
-margin-left: 56px;
-margin-right: 20px;
-margin-bottom: 1em;
-padding: 1em;
-background: #71a856;
-box-shadow: 0.5em 0.5em 0.5em #235707;
-opacity: 0.9;
-clear: both;
-}
-
-fieldset legend {
+legend {
 text-shadow: 2px 2px 2px #ebe2d1;
-background: #235707;
+font-size: 18pt;
+text-align: center;
 }
 
 .intro, .why, .working { 
@@ -383,11 +402,8 @@ float: left;
 }
 
 h2 {
-font-family: 'Libre Baskerville', serif;
 font-weight: bold;
-box-shadow: 2px 2px 2px #71a856;
 box-shadow: 2px 2px 2px #422b00;
-float: left;
 }
 
 .social {
@@ -416,7 +432,6 @@ text-align: left;
 
 blockquote {
 	font-style: italic;
-	clear: left;
 }
 
 ul,li {
@@ -425,15 +440,11 @@ text-align: left;
 display: block;
 }
 
-a {
-color:#235707;
-}
-
 p {
 	font-family: 'Libre Baskerville', serif;
 	color: #422b00;
 	text-shadow: 2px 2px 2px #8f6f27;
-	line-height: 2em;
+	line-height: 1.5em;
 	clear: both;
 }
 
@@ -510,9 +521,7 @@ myButton {
 }
 /*End of Form Data */
 
-#contact {
-clear: both;
-}
+
 
 #pet_portal_link {
 color: #422b00;
@@ -526,9 +535,9 @@ font: 'Libre Baskerville', serif;
 footer {
 		text-shadow: 0.25em 0.25em 0.25em #424331;
 		text-align: center;
-		padding: 0.8em;
-		background-color: #ebe2d1;
 		clear: both;
+		margin: 50px;
+   	 	padding: 3em;
 }
 
 
