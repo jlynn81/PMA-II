@@ -360,23 +360,25 @@ float: left;
 /* End of Table Data */
 
 legend {
+margin-left: 175px;
+margin-right: 175px;
+padding: 25px;
 text-shadow: 2px 2px 2px #ebe2d1;
 font-size: 18pt;
 text-align: center;
 }
 
-.intro, .why, .working { 
+table { 
 margin: 10px;
 color: #422b00;
-background-color: #ebe2d1;
 box-shadow: 2px 2px 2px #422b00;
+
 }
 
 .address {
 margin-top: 10px;
-margin-left: 56px;
+margin-left: 175px;
 text-align: left;
-box-shadow: 0.5em 0.5em 0.5em #8f6f27;
 float: left;
 }
 
@@ -428,20 +430,23 @@ text-align: center;
 /*map image */
 #map {
 text-align: left;
+float: right;
 }
 
 blockquote {
 	font-style: italic;
+	text-align: center;
 }
 
 ul,li {
 list-style: none;
-text-align: left;
+text-align: center;
 display: block;
 }
 
 p {
 	font-family: 'Libre Baskerville', serif;
+	margin: 0px 175px 0 175px;
 	color: #422b00;
 	text-shadow: 2px 2px 2px #8f6f27;
 	line-height: 1.5em;
@@ -455,12 +460,12 @@ text-align: center;
 /*Form Information on the Contact Page */
 #contactform {
 margin-top: 10px;
-background-color: #71a856;
 text-shadow: 2px 2px 2px #ebe2d1;
+clear: both;
 }
 
 .contactinfo {
-float: none;
+clear: both;
 }
 
 label input {
