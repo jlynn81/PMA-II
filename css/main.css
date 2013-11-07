@@ -1,4 +1,14 @@
-
+#home {
+	z-index: -999;
+  	min-height: 100%;
+  	min-width: 59.375%;
+  	width: 100%;
+  	height: 100%;
+  	position: fixed;
+  	top: 0;
+  	left: 0;
+  	opacity: 0.5;
+}
 /* Social Networking background gradient */
 
 body {
@@ -9,7 +19,9 @@ text-align: center;
 
 /* Header element of the content page */
 #logo {
+	margin-left: 175px;
 	margin-top: 25px;
+    width: 1086px;
 }
 
 /* Navigation Beginning */
@@ -80,7 +92,7 @@ nav a:hover, nav a:focus {
 /* End of the Header of the page */ 
 
 #welcome {
-	background: none repeat scroll 0 0 #60A1FF;
+	background: none repeat scroll 0 0;
 	float: left;
 	font-family: 'Libre Baskerville', serif;
 	margin: 20px 20px 20px 175px;
@@ -238,12 +250,12 @@ label.arrows:hover { opacity: 1 }
 label.arrows:active { margin-top: -23px }
 
 input[type=radio]#button-1:checked~.arrows#arrow-2, input[type=radio]#button-2:checked~.arrows#arrow-3, input[type=radio]#button-3:checked~.arrows#arrow-4, input[type=radio]#button-4:checked~.arrows#arrow-5 {
-    right: -55px;
+    right: -32px;
     display: block;
 }
 
 input[type=radio]#button-2:checked~.arrows#arrow-1, input[type=radio]#button-3:checked~.arrows#arrow-2, input[type=radio]#button-4:checked~.arrows#arrow-3, input[type=radio]#button-5:checked~.arrows#arrow-4 {
-    left: -55px;
+    left: -32px;
     display: block;
     -webkit-transform: scaleX(-1);
     -moz-transform: scaleX(-1);
@@ -252,11 +264,11 @@ input[type=radio]#button-2:checked~.arrows#arrow-1, input[type=radio]#button-3:c
     transform: scaleX(-1);
 }
 
-input[type=radio]#button-2:checked~.arrows#arrow-1 { left: -19px }
+input[type=radio]#button-2:checked~.arrows#arrow-1 { left: 0px }
 
-input[type=radio]#button-3:checked~.arrows#arrow-2 { left: -37px }
+input[type=radio]#button-3:checked~.arrows#arrow-2 { left: -15px }
 
-input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
+input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -50px }
 
 .description {
     position: absolute;
@@ -273,7 +285,7 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -73px }
     font-family: 'WebSymbolsRegular';
     background-color: rgba(255,255,240,1);
     position: relative;
-    left: -17px;
+    left: -120px;
     top: 00px;
     width: 40px;
     height: 27px;
