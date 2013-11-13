@@ -12,10 +12,22 @@
 /* Social Networking background gradient */
 
 body {
-line-height: 2em;
-font: 1.5em;
-text-align: center;
+    border-radius: 1.25%;
+    border-width: 2em;
+    
+    height: 100%;
+    line-height: 125%;
+    margin: 0 auto;
+    padding: 1.875%;
+    text-align: center;
+    width: 90%;
+    
+    color: #999;
+    
 }
+h2 { color: #333; }
+
+
 
 /* Header element of the content page */
 #logo {
@@ -116,7 +128,9 @@ nav a:hover, nav a:focus {
     padding: 0;
 } 
 
-h1 { color: white }
+h1 { 
+	color: white;
+}
 
 #slideshow-wrap {
 	border-top-width: 12px;
@@ -336,8 +350,6 @@ margin-bottom: 2em;
 float: none;
 }
 
-
-
 select {
 font-family: 'Libre Baskerville', serif;
 font-size:1em;
@@ -354,7 +366,7 @@ font-weight: bold;
 text-shadow: 2px 2px 2px #ebe2d1;
 }
 
-/* Table Date */
+/* Table Data */
 th  {
 text-align: center;
 color: #422b00;
@@ -363,6 +375,7 @@ border-radius: 10px;
 font-weight: bolder;
 clear: both;
 display: inline;
+margin: 75px 75px 75px 75px;
 }
 
 .content {
@@ -371,14 +384,7 @@ float: left;
 
 /* End of Table Data */
 
-legend {
-margin-left: 175px;
-margin-right: 175px;
-padding: 25px;
-text-shadow: 2px 2px 2px #ebe2d1;
-font-size: 18pt;
-text-align: center;
-}
+
 
 table { 
 margin: 10px;
@@ -415,10 +421,6 @@ border: 0.5em solid #235707;
 float: left;
 }
 
-h2 {
-font-weight: bold;
-box-shadow: 2px 2px 2px #422b00;
-}
 
 .social {
 font-family: 'Libre Baskerville', serif;
@@ -459,8 +461,6 @@ display: block;
 p {
 	font-family: 'Libre Baskerville', serif;
 	margin: 0px 175px 0 175px;
-	color: #422b00;
-	text-shadow: 2px 2px 2px #8f6f27;
 	line-height: 1.5em;
 	clear: both;
 }
@@ -550,12 +550,20 @@ font: 'Libre Baskerville', serif;
 
 /* End of Content */
 footer {
-		text-shadow: 0.25em 0.25em 0.25em #424331;
+
 		text-align: center;
-		clear: both;
 		margin: 50px;
    	 	padding: 3em;
+   	 	color: #aeaeae;
 }
+
+footer ul {}
+footer li { 
+	float: left; 
+	padding: 0 10px;
+	border-right: solid 1px #eaeaea;
+}
+footer li:last-child { border-right: none; }
 
 
 /* Media Query -------------------------------------------------------------------------/*
