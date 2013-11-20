@@ -23,9 +23,6 @@ body {
     color: #999;
     
 }
-h2 { color: #333; }
-
-
 
 /* Header element of the content page */
 #logo {
@@ -88,10 +85,12 @@ nav a:hover, nav a:focus {
 	background: none repeat scroll 0 0;
 	float: left;
 	font-family: 'Libre Baskerville', serif;
-	padding: 50px 20px 20px;
-	
-	
+	padding: 50px 20px 20px;	
 } 
+
+#welcome h2 {
+	color: #333;
+}
 
 embed {
 	float: left;
@@ -108,39 +107,27 @@ embed {
 
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
 
-* {
-    margin: 0;
-    padding: 0;
-} 
 
 h1 { 
 	color: white;
 }
 
 #slideshow-wrap {
-	border-top-width: 12px;
     display: block;
-    height: 320px;
-    margin: auto;
-    border: 12px rgba(255,255,240,1) solid;
-    -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,.8);
-    -moz-box-shadow: 0px 0px 5px rgba(0,0,0,.8);
-    box-shadow: 0px 0px 5px rgba(0,0,0,.8);
-    margin-top: 20px;
-    position: relative;
     float: right;
+    height: 320px;
+    margin: 20px auto auto;
+    position: relative;
 }
 
 #slideshow-inner {
-    width: 100%;
     height: 100%;
-    background-color: rgb(0,0,0);
     overflow: hidden;
     position: relative;
+    width: 100%;
 }
 
 #slideshow-inner>ul {
-    list-style: none;
     height: 100%;
     width: 500%;
     overflow: hidden;
@@ -268,11 +255,11 @@ input[type=radio]#button-3:checked~.arrows#arrow-2 { left: -15px }
 input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -50px }
 
 .description {
+    font-family: 'Yanone Kaffeesatz';
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
     width: 260px;
-    font-family: 'Yanone Kaffeesatz';
     z-index: 1000;
 }
 
@@ -351,14 +338,7 @@ text-shadow: 2px 2px 2px #ebe2d1;
 
 /* Table Data */
 th  {
-text-align: center;
-color: #422b00;
-padding: 0.3em;
-border-radius: 10px;
-font-weight: bolder;
-clear: both;
-display: inline;
-margin: 75px 75px 75px 75px;
+color: #333;
 }
 
 .content {
@@ -367,13 +347,6 @@ float: left;
 
 /* End of Table Data */
 
-
-
-table { 
-margin: 10px;
-color: #422b00;
-
-}
 
 .address {
 margin-top: 50px;
@@ -429,16 +402,86 @@ blockquote {
 	padding: 5px;
 }
 
-ul,li {
-list-style: none;
-text-align: center;
-display: block;
+#surgery h1, #dental h1, #boarding h1, #vac h1, #exotic h1, #pharmacy h1, #discounts h1, #md h1, #why h1, #working h1, #team h1 {
+	color: #333;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-left: 25px;
+    text-align: left;
 }
 
-p {
-	font-family: 'Libre Baskerville', serif;
-	line-height: 1.5em;
+#surgery p, #dental p, #boarding p, #vac p, #exotic p, #pharmacy p, #discounts p, #md p, #working p, #team p {
 	clear: both;
+    font-family: 'Libre Baskerville',serif;
+    line-height: 1.5em;
+    margin: 0 75px 0 125px;
+    text-align: left;
+}
+
+#vac ul li {
+	padding: 5px;
+}	
+
+#working{
+	float: right;
+	width: 500px;
+}
+
+#why{
+	float: left;
+	width: 500px;
+}
+
+#why ul{
+	padding-left: 25px;
+	margin-left: 100px;
+	font-family: 'Libre Baskerville',serif;
+    line-height: 1.5em;
+    
+}
+
+#team{
+	width: 500px;
+	clear: right;
+}		
+
+#team h2{
+	color: #333;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding: 25px;
+    text-align: left;
+    width: 250px;
+} 
+
+#team h3{
+	color: #333;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding: 25px;
+    text-align: left;
+    width: 250px;
+	float: right;
+}	
+
+
+
+#team ul,li {
+	display: inline;
+	padding-left: 0px;
+}
+
+#team a.rollover {
+	text-decoration: none;
+}
+
+#team a.rollover:hover {
+	background-position: -150px 0;
+}
+
+#team .displace {
+	left:19em;
+	position: absolute;
 }
 
 .center {
@@ -464,7 +507,8 @@ padding: 15px;
 }
 
 .contactinfo {
-clear: both;
+	clear: both;
+    color: #333333;
 }
 
 label input {
@@ -525,29 +569,23 @@ myButton {
 }
 /*End of Form Data */
 
-#surgery h1, #dental h1, #boarding h1, #vac h1, #exotic h1, #pharmacy h1, #discounts h1, #md h1, #why h1, #working h1, #team h1 {
-	padding: 25px;
-	color: #330000;
-	text-align: left;
-	margin-top: 50px;
-}
 
-#surgery p, #dental p, #boarding p, #vac p, #exotic p, #pharmacy p, #discounts p, #md p, #why p, #working p, #team p {
-	text-align: justify;
-}
-
-#vac ul li {
-	padding: 5px;
-}	
 
 .hospital-info {
-font: 'Libre Baskerville', serif;
-padding-top: 25px;
+	margin-top: 41px;
+	width: 300px;
+	font: 'Libre Baskerville', serif;
+	font-size: 20px;
+	text-align: left;
+	padding-top: 25px;
+	float: right;
 }
+
+
 
 /* End of Content */
 footer {
-
+		margin: 425px 50px 0 50px;
 		text-align: center;
    	 	padding: 10em;
    	 	color: #aeaeae;
