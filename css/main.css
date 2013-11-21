@@ -234,12 +234,12 @@ label.arrows:hover { opacity: 1 }
 label.arrows:active { margin-top: -23px }
 
 input[type=radio]#button-1:checked~.arrows#arrow-2, input[type=radio]#button-2:checked~.arrows#arrow-3, input[type=radio]#button-3:checked~.arrows#arrow-4, input[type=radio]#button-4:checked~.arrows#arrow-5 {
-    right: -32px;
     display: block;
+    left: 1005px;
 }
 
 input[type=radio]#button-2:checked~.arrows#arrow-1, input[type=radio]#button-3:checked~.arrows#arrow-2, input[type=radio]#button-4:checked~.arrows#arrow-3, input[type=radio]#button-5:checked~.arrows#arrow-4 {
-    left: -32px;
+    
     display: block;
     -webkit-transform: scaleX(-1);
     -moz-transform: scaleX(-1);
@@ -257,6 +257,7 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -50px }
 .description {
     font-family: 'Yanone Kaffeesatz';
     left: 0;
+    margin-left: 100px;
     position: absolute;
     top: 0;
     width: 260px;
@@ -310,7 +311,7 @@ input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -50px }
 
 .description input[type=checkbox]:checked~.description-text { opacity: 1 }
 
-<!-- END OF SLIDESHOW -->
+/*END OF SLIDESHOW */
 
 .links {
 text-decoration: none;
@@ -387,6 +388,14 @@ h4 {
 font-family: 'Libre Baskervill', serif;
 font-weight: bold;
 text-align: center;
+}
+
+/* Video Data */
+video{
+	width: 640px;
+	height: 360px;
+	display: inline;
+	margin: 45px 0px 0px 125px;
 }
 
 /*map image */
@@ -577,7 +586,7 @@ myButton {
 	font: 'Libre Baskerville', serif;
 	font-size: 20px;
 	text-align: left;
-	padding-top: 25px;
+	padding-top: 25px 0px 0px 3px;
 	float: right;
 }
 
