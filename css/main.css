@@ -92,13 +92,19 @@ nav a:hover, nav a:focus {
 	color: #333;
 }
 
+blockquote {
+	font-style: italic;
+	padding: 5px;
+	text-align: right;
+}
+
 embed {
 	float: left;
 	margin-top: 65px;
 	margin-left: 110px;
 }
 
-<!-- Code for Image slide show -->
+/* Code for Image slide show */
 @font-face {
     font-family: 'WebSymbolsRegular';
     src: url('http://html5css3demos.bplaced.net/css3-slider-v3/websymbols-regular-webfont.eot');
@@ -122,6 +128,7 @@ h1 {
 
 #slideshow-inner {
     height: 100%;
+    margin-left: -25px;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -151,54 +158,7 @@ h1 {
     height: 100%;
 }
 
-#slideshow-wrap input[type=radio] {
-    position: absolute;
-    left: 50%;
-    bottom: 15px;
-    z-index: 100;
-    visibility: hidden;
-}
-
-#slideshow-wrap label:not(.arrows):not(.show-description-label) {
-    position: absolute;
-    left: 50%;
-    bottom: -45px;
-    z-index: 100;
-    width: 12px;
-    height: 12px;
-    background-color: rgba(200,200,200,1);
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-    cursor: pointer;
-    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,.8);
-    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,.8);
-    box-shadow: 0px 0px 3px rgba(0,0,0,.8);
-    -webkit-transition: background-color .2s;
-    -moz-transition: background-color .2s;
-    -o-transition: background-color .2s;
-    transition: background-color .2s;
-}
-
 #slideshow-wrap label:not(.arrows):active { bottom: -46px }
-
-#slideshow-wrap input[type=radio]#button-1:checked~label[for=button-1] { background-color: rgba(100,100,100,1) }
-
-#slideshow-wrap input[type=radio]#button-2:checked~label[for=button-2] { background-color: rgba(100,100,100,1) }
-
-#slideshow-wrap input[type=radio]#button-3:checked~label[for=button-3] { background-color: rgba(100,100,100,1) }
-
-#slideshow-wrap input[type=radio]#button-4:checked~label[for=button-4] { background-color: rgba(100,100,100,1) }
-
-#slideshow-wrap input[type=radio]#button-5:checked~label[for=button-5] { background-color: rgba(100,100,100,1) }
-
-#slideshow-wrap label[for=button-1] { margin-left: -36px }
-
-#slideshow-wrap label[for=button-2] { margin-left: -18px }
-
-#slideshow-wrap label[for=button-4] { margin-left: 18px }
-
-#slideshow-wrap label[for=button-5] { margin-left: 36px }
 
 #slideshow-wrap input[type=radio]#button-1:checked~#slideshow-inner>ul { left: 0 }
 
@@ -218,6 +178,7 @@ label.arrows {
     top: 50%;
     margin-top: -25px;
     display: none;
+    right: 950px;
     opacity: 0.7;
     cursor: pointer;
     z-index: 1000;
@@ -250,9 +211,11 @@ input[type=radio]#button-2:checked~.arrows#arrow-1, input[type=radio]#button-3:c
 
 input[type=radio]#button-2:checked~.arrows#arrow-1 { left: 0px }
 
-input[type=radio]#button-3:checked~.arrows#arrow-2 { left: -15px }
+input[type=radio]#button-3:checked~.arrows#arrow-2 { left: 0px }
 
-input[type=radio]#button-5:checked~.arrows#arrow-4 { left: -50px }
+input[type=radio]#button-4:checked~.arrows#arrow-3 { left: 0px }
+
+input[type=radio]#button-5:checked~.arrows#arrow-4 { left: 0px }
 
 .description {
     font-family: 'Yanone Kaffeesatz';
@@ -405,11 +368,7 @@ video{
 	text-align: left;
 	float: right;
 }
-
-blockquote {
-	font-style: italic;
-	padding: 5px;
-}
+	
 
 #surgery h1, #dental h1, #boarding h1, #vac h1, #exotic h1, #pharmacy h1, #discounts h1, #md h1, #why h1, #working h1, #team h1 {
 	color: #333;
@@ -426,6 +385,10 @@ blockquote {
     margin: 0 75px 0 125px;
     text-align: left;
 }
+
+#surgery img{
+	float: right;
+}	
 
 #vac ul li {
 	padding: 5px;
@@ -524,11 +487,6 @@ label input {
 display: block;
 text-align: left;
 float: left;
-}
-
-input {
-border: 0.25em solid #235707;
-border-radius: 6px;
 }
 
 /* Gradient Button */
